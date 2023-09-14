@@ -10,11 +10,12 @@
   box-sizing: border-box;
 }
 
+
 body{
-  background-image: linear-gradient(135deg, #ff7cae,#a950a1 ,#5a4894, #161569,#2f3f80, #505488,   #0087d4);
+  background-image: linear-gradient(135deg,#ffcfac, #cd6e8a, #f5eab0,  #d6c8a2, #a2758d);
   background-size: 500%;
   animation: fananimado 10s infinite;
-  /* background-color: #f1c4dc; */
+
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -29,7 +30,7 @@ body{
   50%{
     background-position: 100% 50% ;
   }
-  100%{ 
+  100%{
     background-position: 0% 50%
   }
 }
@@ -192,20 +193,18 @@ body{
  }
 
 .conocimientos-tarjeta figure:hover{
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); 
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
 
-
-
  .formulario{
   margin-top: 20px;
-  background: rgba(0, 0, 0, 0.3);
-  margin: 10px;
+  background: rgba(245, 100, 233, 0.301);
+  margin: 15px;
  }
 
  .formulario-titulo{
-  font-family: 'Brodies', sans-serif;
+  margin-top: 15px;
   text-align: center;
 
  }
@@ -224,9 +223,10 @@ body{
  }
 
  .formulario-boton{
-  background: #b695c075;
+  background: #b8378275;
   color: white;
   padding: 10px;
+  border-radius: 10px;
  }
 
  .formulario-boton :hover {
