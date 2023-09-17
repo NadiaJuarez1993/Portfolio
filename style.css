@@ -196,7 +196,6 @@ body{
   flex-direction: column;
   align-items: center;
  }
-
  
  .conocimientos-tarjeta img{
   height: 250px;
@@ -216,6 +215,64 @@ body{
  }
 
  .conocimientos-tarjeta figure:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+ }
+
+ .mis-proyectos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .proyectos-titulo{
+  text-align: center;
+  font-size: 1.9rem;
+  margin-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+ }
+
+ .proyectos-texto{
+  text-align: center;
+ }
+
+
+
+ .proyectos-titulo span{
+  font-family: 'Brodies', sans-serif;
+  color: #12a028;
+  font-size: 1.9rem;
+  margin-top:30px;
+  text-align: center;
+ }
+
+ .proyectos-contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+
+
+ 
+ .proyectos-tarjeta img{
+  height: 250px;
+  width: 250px;
+ }
+
+ .proyectos-tarjeta figure{
+  width: 90%;
+  margin: 15px 15px;
+  padding: 10px 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+ }
+
+ .proyectos-tarjeta figure:hover{
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
  }
