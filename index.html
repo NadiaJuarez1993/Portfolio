@@ -13,50 +13,48 @@
     <meta itemprop="GitHub" content="NadiaJuarez1993">
     <link rel="icon" type="image/x-icon" href="./img/NJ-icono-pestaña.png">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <script src="https://kit.fontawesome.com/a2efbdb0cc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
 
-    <title>Document</title>
+    <title>Portfolio Nadia Juarez</title>
 </head>
 <body>
     <div >
         <header>
             <div class="hero">
              <nav class="hero-menu">
-                 <h2><span>N</span>J</h2>
+                 <h2 class="hero-logo"><span>N</span>J</h2>
                  <input  type="checkbox" class="checkbox">
                  <i class="iconos fi fi-br-menu-burger" ></i>
                  <i class="iconos fi fi-br-cross"></i>
-                 <ul class="hero-menu-list">
+                 <ul class="hero-menu-lista">
                     <li><a href="#sobre-mi">Sobre Mi</a></li>
                     <li><a href="#mis-conocimientos">Mis conocimientos</a></li>
                     <li><a href="#contactame">Contactame</a></li>
                  </ul>
              </nav>
             </div>
+
             <div class="presentacion">
                 <a id="sobre-mi"></a>
-                <img src="./img/ilustracion-1.png" alt="ilustracion hola" class="presentacion-ilustracion">
+                <div class="presentacion-ilustracion">
+                <img src="./img/ilustracion-1.png" alt="ilustracion hola" ></div>
                 <p>¡Hola!</p>
                 <h1 class="presentacion-titulo">Soy <span>Nadia Juarez</span></h1>
-                    <p class="presentacion-texto">Estudiante de curso de Desarrollo Frontend </p>
-                    <p class="presentacion-texto">Futura Developer Fontend</p>
+                <p >Estudiante de curso de Desarrollo Frontend </p> <p>Futura Developer Fontend</p>
             </div>
         </header>
-
+        
         <section class="conocimientos">
             <a id="mis-conocimientos"></a>
             <h2 class="conocimientos-titulo">Mis <span>conocimientos</span></h2>
-            <p >Tengo conocimientos de HTML5, CSS, Git y Git Hub</p>
-
+            <p class="conocimientos-texto">Tengo conocimientos de HTML5, CSS, Git y Git Hub</p>
             <div class="conocimientos-contenedor">
                 <div class="conocimientos-tarjeta">
                  <figure><img src="./img/icono-css.png" alt=""></figure>
-
                  <figure><img src="./img/icono-html.png" alt=""></figure>
-
                  <figure><img src="./img/git-icono.png" alt=""></figure>
-
                  <figure><img src="./img/icono-github.png"alt=""></figure>
                </div>
             </div>
@@ -73,11 +71,15 @@
                <input type="button" value="Enviar" class="formulario-boton">
             </form>
         </section>
-        <footer class="footer">
+        <footer class="pie-de-pagina">
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/nadia.juarez07/"> <i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+                <a href="https://www.linkedin.com/in/nadia-juarez-24833bba/"> <i class="fa-brands fa-linkedin" style="color: #000000;"></i></a>
+                <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord" style="color: #000000;"></i></a>
+                <a href="https://github.com/NadiaJuarez1993"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
+            </div>
             <p>
-                <span>
-                    &copy; Nadia Juarez, Septiembre 2023.
-                </span>
+                &copy; Septiembre 2023, <b>Nadia Juarez.</b>
             </p>
         </footer>
     </div>
