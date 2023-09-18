@@ -16,14 +16,15 @@
 
 
 body{
-  background-image: linear-gradient(135deg, #eea2a2, #bbc1bf , #57c6e1, #b49fda, #7ac5d8);
-  background-size: 500%;
-  animation: fananimado 10s infinite;
+  
+  /* background-image: linear-gradient(135deg, #eea2a2, #bbc1bf , #57c6e1, #b49fda, #7ac5d8);
+  background-size: 500%; */
+  /* animation: fananimado 10s infinite; */
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
 }
 
-@keyframes fananimado{
+/* @keyframes fananimado{
   0% {
     background-position: 0% 50%;
   }
@@ -33,12 +34,12 @@ body{
   100%{
     background-position: 0% 50%
   }
-}
+} */
 
 @media screen and (min-width:320px){
  .hero{
     position: relative;
-    color: white;
+    color: #12a028;
   }
 
   .hero-menu{
@@ -53,11 +54,11 @@ body{
  }
 
   .hero-menu span{
-    color: #12a028;
+    color: #000000;
   }
 
   .checkbox , .iconos{
-    color: #12a028;
+    
     width: 30px;
     height: 30px;
     position: absolute;
@@ -174,20 +175,26 @@ body{
   color: #12a028;
  }
 
+ .conocimientos{
+  background-color: #b8378275;
+ }
+
  .conocimientos-titulo  {
   text-align: center;
   font-size: 1.9rem;
-  margin-top: 40px;
+  padding: 30px 15px;
   font-family: 'Montserrat', sans-serif;
-  
  }
  
+ .conocimientos-texto{
+  text-align: center;
+  font-size: 1rem;
+ }
+
  .conocimientos-titulo span{
   font-family: 'Brodies', sans-serif;
   color: #12a028;
- }
-
- .conocimientos-texto{
+  font-size: 1.9rem;
   text-align: center;
  }
 
@@ -209,13 +216,13 @@ body{
   border-radius: 6px;
   overflow: hidden;
   background: white;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.50);
+  cursor: pointer;
   transition: all 400ms ease;
  }
 
  .conocimientos-tarjeta figure:hover{
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.80);
   transform: translateY(-3%);
  }
 
@@ -226,24 +233,21 @@ body{
  }
 
  .proyectos-titulo{
+  padding: 30px;
   text-align: center;
   font-size: 1.9rem;
-  margin-top: 40px;
+  padding: 40px 20px;
   font-family: 'Montserrat', sans-serif;
  }
 
  .proyectos-texto{
   text-align: center;
+  font-size: 1rem;
  }
-
-
 
  .proyectos-titulo span{
   font-family: 'Brodies', sans-serif;
   color: #12a028;
-  font-size: 1.9rem;
-  margin-top:30px;
-  text-align: center;
  }
 
  .proyectos-contenedor{
@@ -252,36 +256,72 @@ body{
   align-items: center;
  }
 
-
-
- 
- .proyectos-tarjeta img{
+ .proyectos-tarjeta{
+  margin: 15px 15px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
   height: 250px;
   width: 250px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.50);
+  overflow: hidden;
  }
 
- .proyectos-tarjeta figure{
-  width: 90%;
-  margin: 15px 15px;
+ .proyecto-tarjeta-texto{
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  border-radius: 0 0 15px 15px;
+ }
+
+ .proyectos-tarjeta-img{
+  height: 250px;
+  width: 250px;
   padding: 10px 10px;
   border-radius: 6px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  cursor: default;
-  transition: all 400ms ease;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
  }
 
- .proyectos-tarjeta figure:hover{
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
+ .proyectos-tarjeta:hover .proyectos-tarjeta-img{
+  transform: scale(1.5);
+  transition: 0.5s all ease-in-out;
  }
+
+ .proyectos-tarjeta:hover .proyecto-tarjeta-texto{
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  .formulario{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 25px;
   background: rgba(245, 100, 233, 0.301);
   margin: 15px;
  }
@@ -290,7 +330,7 @@ body{
   font-family: 'Brodies', sans-serif;
   color: #12a028;
   font-size: 1.9rem;
-  margin-top:30px;
+  padding: 20px ;
   text-align: center;
 
  }
@@ -299,7 +339,6 @@ body{
   padding: 10px 10px;
   margin: 5px ;
   width: 90%;
-
  }
 
  .formulario-titulo textarea{
@@ -320,15 +359,19 @@ body{
  }
 
  .pie-de-pagina{
+  height: 150px;
+  width: 100%;
+  background-color: #b8378275;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+ 
  }
 
- .redes-sociales{
+ .redes-sociales i{
   font-size: 2rem;
- }
-
+  align-items: center;
+  padding: 40px 20px;
 }
 
 @media screen and (min-width:768px){
